@@ -7,8 +7,7 @@ router.get('/', async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   const tagData = await Tag.findAll({
-    // TO DO ADD ASSOCIATIONS
-    // include: [{ model: Category}],
+    include: [{ model: Product, through:ProductTag}],
   })
   .catch((err) => {
    res.json(err);
@@ -22,8 +21,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Product data
   try {
     const tagData = await Tag.findByPk(req.params.id,{
-     // TO DO ADD ASSOCIATIONS
-      // include: [{ model: Category}],
+      include: [{ model: Product, through:ProductTag}],
     });
 
     if (!tagData) {
