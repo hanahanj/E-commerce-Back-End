@@ -50,6 +50,6 @@ THEN I am able to successfully create, update, and delete data in my database
   You can also find more of my work at[hanahanj](https://github.com/hanahanj).
 
 
-![Repo]()
+![Repo](https://github.com/hanahanj/E-commerce-Back-End)
 
-![Screen Recording]()
+![Screen Recording](https://drive.google.com/file/d/1tPmRegvFkypq6RdqOq7EvWGWXIwagKMD/view)
